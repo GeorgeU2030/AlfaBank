@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="627.0" style="-fx-background-color: #FFE082;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="42.0" layoutY="38.0" prefHeight="33.0" prefWidth="79.0" text="Income">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="220.0" layoutY="38.0" prefHeight="33.0" prefWidth="79.0" text="Expenses">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="397.0" layoutY="38.0" prefHeight="33.0" prefWidth="79.0" text="Balance">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="incomeLabel" alignment="CENTER" layoutX="42.0" layoutY="79.0" prefHeight="33.0" prefWidth="137.0">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="expensesLabel" alignment="CENTER" layoutX="208.0" layoutY="79.0" prefHeight="33.0" prefWidth="137.0">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="balanceLabel" alignment="CENTER" layoutX="385.0" layoutY="79.0" prefHeight="33.0" prefWidth="137.0">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="165.0" layoutX="60.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/icon-5359553_960_720.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="283.0" layoutY="214.0" prefHeight="33.0" prefWidth="79.0" text="User:">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="283.0" layoutY="268.0" prefHeight="33.0" prefWidth="79.0" text="Password:">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="userLabel" layoutX="414.0" layoutY="214.0" prefHeight="33.0" prefWidth="150.0">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="passwordLabel" layoutX="414.0" layoutY="268.0" prefHeight="33.0" prefWidth="150.0">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <MenuBar layoutX="14.0" layoutY="13.0" prefHeight="25.0" prefWidth="79.0" style="-fx-background-color: #fffffe;">
+         <menus>
+            <Menu mnemonicParsing="false" text="Options">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#backMenu" text="Menu" />
+                  <MenuItem mnemonicParsing="false" onAction="#exitApp" text="Exit" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
